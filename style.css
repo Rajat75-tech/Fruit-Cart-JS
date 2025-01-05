@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f0f8ff, #e6e6fa); 
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    border: none;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.products {
+    height: 100%;
+    width: 60%;
+    border-right: 2px solid #dcdcdc;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fdfdfd;
+}
+
+.cart {
+    height: 100%;
+    width: 40%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+
+.products h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0073e6;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.products div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #fafafa; 
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.products div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background: #f0f8ff; 
+}
+
+.products p {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.products span {
+    font-size: 14px;
+    color: #888;
+}
+
+.products button {
+    border: none;
+    padding: 7px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: #0073e6; 
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.products button:hover {
+    background-color: #005bb5; 
+    transform: scale(1.05);
+}
+
+.products button:active {
+    transform: scale(0.95);
+}
+
+.products .quantityDiv {
+    display: flex;
+    align-items: center;
+}
+
+.products .quantityDiv span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 10px;
+}
+.cart {
+    height: 100%;
+    width: 40%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border-left: 2px solid #dcdcdc;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0073e6; 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cart-items {
+    flex-grow: 1; 
+    overflow-y: auto;
+    padding-bottom: 20px; 
+    margin-bottom: 20px;
+}
+
+.cart div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #fafafa; 
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.cart div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background: #f0f8ff;
+}
+
+.cart p {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cart .quantityDiv {
+    display: flex;
+    align-items: center;
+}
+
+.cart .quantityDiv span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 10px;
+}
+
+.cart button {
+    border: none;
+    padding: 7px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: #0073e6; 
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.cart button:hover {
+    background-color: #005bb5; 
+    transform: scale(1.05);
+}
+
+.cart button:active {
+    transform: scale(0.95);
+}
+
+
+.cart-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border-top: 1px solid #dcdcdc;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.cart-empty {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    font-weight: bold;
+    margin-top: 20px;
+}
